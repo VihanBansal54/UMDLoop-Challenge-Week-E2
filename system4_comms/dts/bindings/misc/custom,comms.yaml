@@ -1,0 +1,12 @@
+description: |
+  Wraps an existing UART controller to receive an external byte value
+  (0-255), matching the original design that read serial input over
+  USART/USB.
+
+compatible: "custom,comms"
+
+properties:
+  uart:
+    type: phandle
+    required: true
+    description: UART controller used to receive external data

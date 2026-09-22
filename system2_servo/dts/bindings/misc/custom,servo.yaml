@@ -1,0 +1,22 @@
+description: |
+  Custom servo driver controlled via PWM pulse width, matching a typical
+  hobby servo (500-2400us pulses at 50Hz), ported from Arduino's
+  ESP32Servo library usage.
+
+compatible: "custom,servo"
+
+properties:
+  pwms:
+    type: phandle-array
+    required: true
+    description: PWM output driving the servo signal wire
+
+  min-pulse-us:
+    type: int
+    default: 500
+    description: Pulse width in microseconds corresponding to 0 degrees
+
+  max-pulse-us:
+    type: int
+    default: 2400
+    description: Pulse width in microseconds corresponding to 180 degrees

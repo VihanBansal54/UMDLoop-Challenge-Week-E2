@@ -1,0 +1,7 @@
+config CUSTOM_COMMS
+	bool "Custom comms driver"
+	default y
+	depends on SERIAL
+	help
+	  Enable the custom comms driver that wraps a UART controller to
+	  receive an external byte value (0-255).

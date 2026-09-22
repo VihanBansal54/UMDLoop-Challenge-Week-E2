@@ -1,0 +1,6 @@
+/ {
+	comms0: comms_0 {
+		compatible = "custom,comms";
+		uart = <&uart0>;
+	};
+};

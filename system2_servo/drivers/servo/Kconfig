@@ -1,0 +1,7 @@
+config CUSTOM_SERVO
+	bool "Custom servo driver"
+	default y
+	depends on PWM
+	help
+	  Enable the custom servo driver that maps a 0-180 degree value to a
+	  PWM pulse width between min-pulse-us and max-pulse-us.

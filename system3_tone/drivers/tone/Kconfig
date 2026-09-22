@@ -1,0 +1,7 @@
+config CUSTOM_TONE
+	bool "Custom tone driver"
+	default y
+	depends on PWM && ADC
+	help
+	  Enable the custom tone driver that plays a PWM tone for a duration
+	  derived from an ADC voltage reading.

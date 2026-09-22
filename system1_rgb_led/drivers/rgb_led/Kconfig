@@ -1,0 +1,8 @@
+config CUSTOM_RGB_LED
+	bool "Custom RGB LED driver"
+	default y
+	depends on GPIO
+	help
+	  Enable the custom RGB LED driver that lights a single dominant
+	  channel (red, green, or blue) based on a 24-bit hex color value
+	  received over the console.

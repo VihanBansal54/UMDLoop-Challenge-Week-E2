@@ -1,0 +1,17 @@
+description: |
+  Custom tone generator. Plays an audible tone over PWM for a duration
+  derived from an ADC voltage reading, matching a design where the tone
+  duration can be increased or decreased based on a read voltage.
+
+compatible: "custom,tone"
+
+properties:
+  pwms:
+    type: phandle-array
+    required: true
+    description: PWM output driving the buzzer or speaker
+
+  io-channels:
+    type: phandle-array
+    required: true
+    description: ADC channel used to determine tone duration

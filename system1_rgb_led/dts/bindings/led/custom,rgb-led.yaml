@@ -1,0 +1,20 @@
+description: |
+  RGB LED that takes hexcode values and flashes the colored led that is closest to that hex
+
+compatible: "custom,rgb-led"
+
+properties:
+  red-gpios:
+    type: phandle-array
+    required: true
+    description: GPIO connected to red LED
+
+  green-gpios:
+    type: phandle-array
+    required: true
+    description: GPIO connected to green LED
+
+  blue-gpios:
+    type: phandle-array
+    required: true
+    description: GPIO connected to blue LED

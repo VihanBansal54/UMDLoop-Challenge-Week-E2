@@ -1,0 +1,8 @@
+/ {
+	rgb_led0: rgb_led_0 {
+		compatible = "custom,rgb-led";
+		red-gpios   = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+		green-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+		blue-gpios  = <&gpio0 14 GPIO_ACTIVE_HIGH>;
+	};
+};
